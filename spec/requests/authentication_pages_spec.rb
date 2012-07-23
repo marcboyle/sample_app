@@ -25,6 +25,12 @@ describe "Authentication" do
           it { should_not have_selector('div.alert.alert-error') }
       end
  end
+ describe "authorization" do
 
+    describe "for non-signed-in users" do
+      let(:user) { FactoryGirl.create(:user) }
+    end
+    
+ end  
 
 end
